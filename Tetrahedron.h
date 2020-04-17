@@ -14,14 +14,14 @@ using namespace std;
 
 class Tetrahedron{
 
-	double x[3];
-	double y[3];
+	double x[4];
+	double y[4];
 	double h;
 
 public:
 	Tetrahedron(void);
-	Tetrahedron(double x1, double x2, double x3, double y1, double y2, double y3, double h);
-
+	Tetrahedron(double x1, double x2, double x3, double x4, double y1, double y2, double y3, double y4, double h);
+	double get_rate();
 
 	virtual ~Tetrahedron();
 };
